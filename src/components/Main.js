@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import pic from '../images/pic.jpg'
 
 class Main extends React.Component {
   render() {
@@ -13,54 +13,64 @@ class Main extends React.Component {
     return (
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Intro</h2>
+      <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">My developing journey</h2>
           <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          The headline, in short, illustrates my path along with learning, practicing, and enhancing my own coding skills. My interest in coding evolved once I started creating different programs back in high school. Irrespective of the fact that the programs we worked on were easy, I felt that I can express myself and my creativity through making up certain codings. I believed, since the very start, that practice is what will make me succeed although I found the majority just memorizing the rules, different structures, algorithms, etc. Ever since then, I started researching and reading different concepts correlated with coding using different languages including Java, HTML, CSS etc. This further made me link Java to an back-end application; namely, SQL.<br></br> 
+          What made me hold on through coding is that through it you come up with many restrictions, and you try your level best to solve (debug) each and every error, and by that:<br></br><q> <strong> I learnt that one error is not just limited to one solution; there are many solutions that literaly lead to the exact same output.<br></br>
+					The same goes on with life, when one door closes, and the other one closes, and the other one closes, there is a door right there that's open, hold on, be patient, it is right there, you got to change your path, if not, change your point of view about it.</strong></q>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+          <h2 className="major">Experience</h2>
+          <ul>
+          <li>Currently a Co-organizer in <strong>Women TechMakers Kuwait</strong>. Being a part of WTM has really opened many opportunities ahead for me, I have learnt a lot and still up to enhancing my educational life as well as social life.</li>
+          <li>Had an internship as a barista in <strong>ocafe</strong>, that thought me how to be more social, or basically, how to deal with people. I also learnt how to make different kind of drinks (Coffee, hot, and cold drinks etc.)</li>
+          <li>had a part time job in <strong>AJM kuwait</strong>, I was basically handling all the registration work, and all the other receptionist work, including financial work.</li>
+          </ul>
+								
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>A fresh graduate at <strong>The American College of the Middle East (ACM)</strong>, majoring in <strong>Information Technology.</strong></p>
+          <h3><strong>Why Information Technology?</strong></h3><br></br>
+          <div >I have no idea...</div>
+          Sounds funny... I know!! 
+							At first, I wanted to become a Doctor, maybe that's because I didn't really know what I want or what I am really interested in; however, my GPA didn't help. So later, I thought that Information Technology revolves around coding but unfortunately I was wrong again. 
+							That's negative I know, but hold on, read through... I have a point. You see, maybe IT wasn't my thing, but I don't regret it at all because in college, I took a course in programming Java, and that gave me a completely new interest which is basically coding. After that door closed, I started to discover many many new things. After I get my diploma in Information technology, I will change my major to Psychology and continue to enchance my skills in programming. That might seem weird, but with time, I got to know what I really want and what I am interested about. 
+              <br></br><quote>YOU NEVER KNOW UNTIL YOU TRY</quote>
+          {close}
+        </article>
+
+        <article id="interest" className={`${this.props.article === 'interest' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Interests</h2>
+          <span className="image main"><img src={pic} alt="" />
+          </span>
+          <strong>
+          <ul>
+            <li>Reading</li>
+            <li>Doodling</li>
+            <li>Researching</li>
+            <li>Writing</li>
+            <li>Exploring new things</li>
+            <li>UI/UX</li>
+            <li>Teaching Others</li>
+          </ul>
+          </strong>
           {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
+          <h2 className="major">Contact Me</h2>
+         <p>If you want to <strong>talk</strong>, you can <strong>find me</strong> at:</p>
+         <h5>sehameldeen1997@gmail.com</h5>
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://instagram.com/passion_to_code?igshid=19ng60k2v288u" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="https://github.com/Scode97" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
